@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="What Nyami processes, where it is stored, and how to make a data request.">
+  <meta name="theme-color" content="#923c63">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Privacy Policy · Nyami</title>
+  <link rel="canonical" href="https://thealiamalia.github.io/Nyami/privacy.html">
+  <link rel="icon" href="nyami.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="nyami.ico" width="42" height="42" alt=""><span>Nyami<small>Policies &amp; support</small></span></a>
+      <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="terms.html">Terms of Service</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav>
+    </div>
+  </header>
+  <main id="main" class="policy-layout">
+    <aside class="contents"><p class="eyebrow">On this page</p><nav aria-label="Page contents"><ol><li><a href="#operator-and-contact">Operator and contact</a></li><li><a href="#information-processed">Information processed</a></li><li><a href="#why-information-is-used">Why information is used</a></li><li><a href="#external-services-and-visibility">External services and visibility</a></li><li><a href="#storage-and-retention">Storage and retention</a></li><li><a href="#access-correction-and-deletion-requests">Access, correction, and deletion requests</a></li><li><a href="#safeguards-and-updates">Safeguards and updates</a></li></ol></nav><a class="support-link" href="https://discord.gg/FQKsz3hxgJ">Need help? Join support ↗</a></aside>
+    <article class="policy">
+      <div class="document-head"><p class="eyebrow">Nyami / Policies</p><h1>Privacy Policy</h1><p class="lede">What Nyami processes, where it is stored, and how to make a data request.</p><p class="date">Effective October 18, 2026</p></div>
+      <section aria-labelledby="operator-and-contact"><h2 id="operator-and-contact">Operator and contact</h2>
+<p>Nyami is operated by <a href="https://github.com/thealiamalia">thealiamalia</a>, the Nyami operator. For support, privacy questions, access or correction requests, or deletion requests, contact <a href="https://discord.gg/FQKsz3hxgJ">Nyami’s Discord support server</a>. This policy takes effect on October 18, 2026.</p>
+</section>
+<section aria-labelledby="information-processed"><h2 id="information-processed">Information processed</h2>
+<p>Nyami processes information needed to respond to slash commands and operate configured integrations:</p>
+<ul class="details">
+<li><strong>Discord command and operational information:</strong> user, server, channel, interaction, and bot-message identifiers; command names and supplied options; timestamps; permissions used to authorize commands; and delivery/error information. Operational logs include command invocations and may include supplied search queries, media URLs, filenames, message IDs, and error details.</li>
+<li><strong>Image searches and archives:</strong> search phrases, selected filters and engine, source URLs and titles, downloaded image files, file properties, and local filenames. The filenames may include words derived from a search query. Downloaded images are archived on the operator&#x27;s computer and uploaded to Discord when delivery succeeds.</li>
+<li><strong>Image delivery history:</strong> a Discord user or channel scope, image URLs, content/pixel fingerprints, and delivery timestamps used to prevent repeated results. Private replies use per-user history; public channel replies use per-channel history.</li>
+<li><strong>Video searches:</strong> query information, source links, titles, and thumbnail metadata used to build result cards. The current video command does not download or archive video files.</li>
+<li><strong>Twitch subscriptions and summaries:</strong> the Discord server/channel and card-message IDs, Twitch broadcaster IDs and logins, public profile information, current stream identifiers and metadata, preview/category artwork URLs, tags, observed title/category changes, sampled viewers, and relevant timestamps. These records allow a card and its statistics to resume after a restart.</li>
+<li><strong>Optional OBS controls:</strong> authorized command parameters, such as scene or input names, and connection or operation status for the operator&#x27;s configured OBS instance.</li>
+<li><strong>Browser search profile:</strong> when browser searching is enabled, Nyami uses a dedicated local Vivaldi profile. That browser and the search providers may retain searches, cookies, cache, site preferences, and session data under their own behavior and policies.</li>
+</ul>
+<p>The implemented features do not archive a general chat transcript. Discord&#x27;s client library processes connection/event information needed to operate the bot. End users are not asked to provide their Discord password or bot token to use a command.</p>
+</section>
+<section aria-labelledby="why-information-is-used"><h2 id="why-information-is-used">Why information is used</h2>
+<p>Information is used to authorize commands, find and deliver requested content, maintain configured Twitch cards, avoid repeated image results, operate configured integrations, diagnose failures, and provide support. Nyami&#x27;s current implementation does not contain advertising, data-sale, or model-training functionality.</p>
+</section>
+<section aria-labelledby="external-services-and-visibility"><h2 id="external-services-and-visibility">External services and visibility</h2>
+<p>Discord processes command interactions, receives bot replies and attachments, and controls their visibility and storage. A public reply can be seen by people who can access its channel. A private Discord reply has more limited visibility in Discord, but its associated image files, history, and logs can still be stored by the bot operator.</p>
+<p>Search phrases, filters, and relevant website restrictions are sent to the configured search provider, such as Bing, Google, or an enabled SearXNG service and its upstream engines. Media/source websites receive network requests when Nyami resolves or downloads requested results. Twitch receives public channel lookup and stream-status requests. Authorized OBS commands go to the configured OBS endpoint. These services may process network information and other data under their own policies. People opening source links or watching Twitch also interact directly with those services.</p>
+<p>This policy website is hosted on GitHub Pages. GitHub logs visitor IP addresses for security purposes. These pages do not add analytics scripts, tracking pixels, or advertising cookies. GitHub’s own processing is described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+</section>
+<section aria-labelledby="storage-and-retention"><h2 id="storage-and-retention">Storage and retention</h2>
+<p>The current installation stores its database, downloaded image archives, browser profile, settings, and operational logs locally on the operator&#x27;s computer. Operator credentials are kept in private configuration and are not included in public policy pages.</p>
+<p>There is currently no automatic expiry schedule for the local image archives, image delivery-history database, browser profile, or log files. They remain until the operator removes them. Twitch tracker records retain the current state for each configured subscription; <code>/twitch remove</code> deletes that subscription&#x27;s active database row but does not erase independent operational logs or an existing Discord card. Large stream timelines are bounded in the implementation.</p>
+<p>Stopping the bot or removing it from a Discord server does not itself delete stored images, logs, or image history. The operator must review continued need for retained records and handle deletion when they are no longer needed, when the service is discontinued, and when a valid deletion request or applicable obligation requires it. Deletion is handled manually by the operator.</p>
+</section>
+<section aria-labelledby="access-correction-and-deletion-requests"><h2 id="access-correction-and-deletion-requests">Access, correction, and deletion requests</h2>
+<p>Use <a href="https://discord.gg/FQKsz3hxgJ">Nyami’s Discord support server</a> to request access, correction, or deletion of information associated with Nyami. Include your Discord user ID and the relevant server/channel, message, or command details so the operator can identify the records and verify the request. Avoid submitting passwords or tokens. Where a record concerns a server rather than a single individual, the operator may need to confirm the requester&#x27;s authority over that server.</p>
+<p>The current process is manual: the bot does not provide a general self-service privacy-deletion command. The operator can remove applicable bot-controlled local records and files and address bot messages where the bot still has permission to do so. Source websites, Twitch, Discord, other users&#x27; copies, and any independently retained copies are controlled by their respective operators; this policy does not claim control over their retention.</p>
+</section>
+<section aria-labelledby="safeguards-and-updates"><h2 id="safeguards-and-updates">Safeguards and updates</h2>
+<p>The current setup keeps credentials out of ordinary public bot responses and excludes private configuration, runtime databases, and media archives from source-control tracking. Restricted commands check permissions. Access to the operator&#x27;s computer, browser profile, credentials, and logs must also be managed by the operator.</p>
+<p>Changes to Nyami&#x27;s processing practices should be reflected on this page with an updated effective date. Contact <a href="https://discord.gg/FQKsz3hxgJ">Nyami’s Discord support server</a> with questions or requests.</p>
+</section>
+      <div class="contact-box"><h2>Talk to Nyami’s operator</h2><p>For support, privacy questions, or a data request, join the support server and ask to contact the Nyami operator. Do not post passwords, tokens, or private request details publicly.</p><a class="button" href="https://discord.gg/FQKsz3hxgJ">Open Discord support ↗</a></div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div><strong>Nyami</strong><p>Operated by <a href="https://github.com/thealiamalia">thealiamalia</a>.</p></div>
+    <div><a href="https://discord.gg/FQKsz3hxgJ">Support &amp; data requests ↗</a><p>Independent Discord bot. Not affiliated with Discord or Twitch.</p></div>
+  </footer>
+</body>
+</html>
